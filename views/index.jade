@@ -8,12 +8,12 @@ html
     div(style='float:right')
       if(username && authenticated)
         a(href='/signout',style='margin:10px;') Sign Out
-        a(hrft='/resgister',style='margin:10px;') Add article
+        a(href='/resgister',style='margin:10px;') Add article
         a(href='/forgot',style='margin:10px;') Profile
         span #{username}
       else
-        a(href='/login',style='margin:10px;') login
-        a(hrft='/resgister',style='margin:10px;') resgister
+        a(href='./login',style='margin:10px;') login
+        a(href='/resgister',style='margin:10px;') resgister
         a(href='/forgot',style='margin:10px;') forgot password
     div(style='padding:50px;')
       h1=title
