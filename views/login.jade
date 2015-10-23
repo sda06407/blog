@@ -1,10 +1,12 @@
-doctype html
-head
-  title='login'
-
-body
-  請輸入帳號：<input type='text' name='account' size='10'><br>
-  請輸入密碼：<input type='text' name='password' size='10'><br>
-  <input type=submit value='提交'>
-  <input type=reset value='重新輸入'>
-    
+html
+  head
+    title="登入會員"
+  body
+    | Username：
+    input(type='text', name='account', size='10')
+    br
+    | Password：
+    input(type='text', name='password', size='10')
+    br
+    input(type='submit', value='提交')
+    input(type='reset', value='重新輸入')
